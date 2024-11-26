@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Students>
+    <Student>
+        <Name>John Doe</Name>
+        <!-- Відсутній атрибут Faculty -->
+        <Room>101</Room>
+    </Student>
+    <Student>
+        <Name>Jane Smith</Name>
+        <Faculty>Engineering</Faculty>
+        <Room>102</Room>
+    </Student>
+    <Student>
+        <!-- Відсутні і Name, і Faculty -->
+        <Room>103</Room>
+    </Student>
+</Students>

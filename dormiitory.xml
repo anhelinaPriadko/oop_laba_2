@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dormitory>
+    <Student Faculty="Computer Science" Department="Software Engineering" Course="3" Room="101">
+        <Name>Ivan Ivanov</Name>
+        <LivingStart>2023-01-01</LivingStart>
+        <LivingEnd>2024-01-01</LivingEnd>
+    </Student>
+    <Student Faculty="Mathematics" Department="Applied Math" Course="2" Room="102">
+        <Name>Petro Petrov</Name>
+        <LivingStart>2022-09-01</LivingStart>
+        <LivingEnd>2023-06-01</LivingEnd>
+    </Student>
+    <Student Faculty="Physics" Department="Theoretical Physics" Course="4" Room="103">
+        <Name>Olga Orlova</Name>
+        <LivingStart>2023-02-01</LivingStart>
+        <LivingEnd>2023-12-31</LivingEnd>
+    </Student>
+    <Student Faculty="Computer Science" Department="Software Engineering" Course="4" Room="215">
+        <Name>Vasyl Vasylenko</Name>
+        <LivingStart>2023-02-01</LivingStart>
+        <LivingEnd>2023-12-31</LivingEnd>
+    </Student>
+    <Student Faculty="Cybernetics" Department="Applied Mathematics" Course="1" Room="901">
+        <Name>Olena Antonyk</Name>
+        <LivingStart>2023-02-01</LivingStart>
+        <LivingEnd>2023-12-31</LivingEnd>
+    </Student>
+</Dormitory>

@@ -1,0 +1,47 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <VerticalStackLayout Padding="20">
+
+        <Label Text="XML Dormitory parser and transformer to HTML"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="0,0,0,10" />
+
+        <!-- Кнопки -->
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <Button Text="Select XML File" Clicked="OnSelectXmlFileClicked" FontSize="14" WidthRequest="155" BackgroundColor="#66BB6A" />
+            <Button Text="Parse XML" Clicked="OnParseClicked" FontSize="14" WidthRequest="155" BackgroundColor="#66BB6A" />
+            <Button Text="Transform to HTML" Clicked="OnTransformClicked" FontSize="14" WidthRequest="155" BackgroundColor="#66BB6A" />
+            <Button Text="Search" Clicked="OnSearchClicked" FontSize="14" WidthRequest="155" BackgroundColor="#66BB6A" />
+            <Button Text="Clear" Clicked="OnClearClicked" FontSize="14" WidthRequest="155" BackgroundColor="#66BB6A" />
+            <Button Text="Exit" Clicked="OnExitClicked" FontSize="14" WidthRequest="155" BackgroundColor="#66BB6A" />
+        </HorizontalStackLayout>
+
+        <!-- Поля пошуку -->
+        <Label Text="Search:" FontSize="18" HorizontalOptions="Start" />
+        <Entry x:Name="NameEntry" Placeholder="Enter Name" />
+        <Picker x:Name="FacultyPicker" Title="Choose Faculty" Margin="0,0,0,10" />
+        <Entry x:Name="RoomEntry" Placeholder="Enter Room Number" />
+
+        <!-- Вибір методу аналізу -->
+        <Picker x:Name="ParserPicker" Title="Choose Parsing Method" FontSize="18" HorizontalOptions="Start" WidthRequest="300" />
+
+        <!-- Сортування -->
+        <Picker x:Name="SortPicker" Title="Sort by" FontSize="18" HorizontalOptions="Start" WidthRequest="300">
+            <Picker.Items>
+                <x:String>Name</x:String>
+                <x:String>Faculty</x:String>
+                <x:String>Room</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <!-- Поле для виводу -->
+        <Editor x:Name="OutputEditor" 
+                AutoSize="TextChanges" 
+                FontFamily="Courier New" 
+                Margin="0,20,0,0" />
+
+    </VerticalStackLayout>
+</ContentPage>
